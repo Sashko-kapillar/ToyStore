@@ -6,13 +6,16 @@ body {
   background-color: #f8f8f8;
 }
 
+.container {
+  padding: 0 120px;
+}
+
 /* Верхня секція з контактами */
 .top-bar {
-  background-color: #8dc63f;
   color: white;
   display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
+  flex-direction: column;
+
   font-size: 14px;
 }
 
@@ -20,11 +23,28 @@ body {
   margin-right: 20px;
 }
 
-.social-icons a {
+.social {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a5c926;
+}
+
+.social ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.social li {
+  display: inline;
+}
+
+.social a {
   color: white;
-  margin-left: 10px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px; /* Розмір іконок */
 }
 
 /* Навігаційна панель */
@@ -32,7 +52,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
