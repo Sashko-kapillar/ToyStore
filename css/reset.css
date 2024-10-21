@@ -5,3 +5,26 @@
 
 :root {
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.section {
+  padding: 120px 0;
+  width: 100%;
+}
+
+.container {
+  padding: 0 120px;
+  max-width: 1200px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,25 +1,5 @@
-/* Загальні стилі */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
-}
-
-.section {
-  padding: 120px 0;
-  max-width: 1440px;
-}
-
-.container {
-  padding: 0 120px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+@import url("./reset.css");
+@import url("./article.css");
 
 /* Верхня секція з контактами */
 .top-bar {
@@ -258,73 +238,4 @@ img {
 
 .shop-button:hover {
   background-color: #eee;
-}
-
-/* =====   Section article   ===== */
-
-/* Заголовок секції */
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.section-title {
-  font-size: 28px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.see-all-link {
-  font-size: 16px;
-  text-decoration: none;
-  color: #333;
-  display: flex;
-  align-items: center;
-}
-
-.see-all-link span {
-  margin-left: 5px;
-  font-size: 18px;
-}
-
-/* Сітка продуктів */
-.product-grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* Карточка продукту */
-.product-card {
-  background-color: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
-  text-align: center;
-  width: 220px;
-}
-
-.product-image {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-.product-name {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0 0 10px;
-}
-
-.product-price {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #8dc63f;
-  color: white;
-  font-size: 14px;
-  border-radius: 20px;
 }
