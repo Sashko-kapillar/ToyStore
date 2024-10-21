@@ -6,8 +6,18 @@ body {
   background-color: #f8f8f8;
 }
 
+.section {
+  padding: 120px 0;
+}
+
 .container {
   padding: 0 120px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Верхня секція з контактами */
@@ -95,4 +105,147 @@ body {
   padding: 2px 6px;
   border-radius: 50%;
   font-size: 14px;
+}
+/* =====   Section hero   ===== */
+
+.section-hero {
+  background-image: url("../images/bg-hero-1x.png");
+  background-size: cover;
+  background-position: center;
+  padding: 166px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-hero {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* max-width: 570px; */
+  border-radius: 16px;
+  padding: 56px 76px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #8dc63f; /* Зелений колір */
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 20px;
+  max-width: 416px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #8dc63f; /* Зелений колір */
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 24px;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #76b62a; /* Трохи темніший зелений */
+}
+
+/* =====   section shop now   ===== */
+
+.shop-now-title {
+  position: absolute;
+  left: -9999px;
+}
+
+/* .shop-container {
+  position: relative;
+} */
+
+/* Контейнер для категорій */
+.shop-categories {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Карточка категорії */
+.category-card {
+  position: relative;
+  min-width: 570px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-stuff {
+  background-color: #f8b627;
+}
+
+.card-wood {
+  background-color: #f24b72;
+}
+
+/* Зображення категорії */
+.category-image {
+  position: absolute;
+  top: -50px;
+  max-width: 220px;
+  max-height: 220px;
+  object-fit: contain;
+  z-index: 111;
+}
+
+.image-stuff {
+  left: 20px;
+}
+
+.image-wood {
+  right: 0;
+}
+
+/* Текстовий блок */
+.category-content {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+}
+
+.category-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.shop-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.shop-button:hover {
+  background-color: #eee;
 }
