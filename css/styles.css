@@ -186,7 +186,7 @@ img {
 .category-card {
   position: relative;
   min-width: 570px;
-  height: 200px;
+  height: 188px;
   border-radius: 15px;
   overflow: visible;
   display: flex;
@@ -217,14 +217,23 @@ img {
 }
 
 .image-wood {
-  right: 0;
+  right: 20px;
 }
 
 /* Текстовий блок */
 .category-content {
   position: relative;
   z-index: 2;
+}
+
+.content-stuff {
+  margin-left: 50%;
   text-align: left;
+}
+
+.content-wood {
+  margin-left: 25%;
+  text-align: right;
 }
 
 .category-title {
