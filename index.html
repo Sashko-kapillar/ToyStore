@@ -22,36 +22,36 @@
         <ul>
           <li>
             <a href="#" aria-label="Twitter">
-              <svg width="16" height="16" aria-hidden="true">
-                <use href="#icon-twitter"></use>
+              <svg class="social-svg" width="16" height="16" aria-hidden="true">
+                <use href="./images/icons.svg#icon-tvit.svg"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#" aria-label="Facebook">
-              <svg width="16" height="16" aria-hidden="true">
-                <use href="#icon-facebook"></use>
+              <svg class="social-svg" width="16" height="16" aria-hidden="true">
+                <use href="./images/icons.svg#icon-fb.svg"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#" aria-label="Instagram">
-              <svg width="16" height="16" aria-hidden="true">
-                <use href="#icon-instagram"></use>
+              <svg class="social-svg" width="16" height="16" aria-hidden="true">
+                <use href="./images/icons.svg#icon-insta.svg"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Instagram">
-              <svg width="16" height="16" aria-hidden="true">
-                <use href="#icon-pinterest"></use>
+            <a href="#" aria-label="Pinterest">
+              <svg class="social-svg" width="16" height="16" aria-hidden="true">
+                <use href="./images/icons.svg#icon-pint.svg"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Instagram">
+            <a href="#" aria-label="YouTube">
               <svg width="16" height="16" aria-hidden="true">
-                <use href="#icon-youtube"></use>
+                <use href="./images/icons.svg#icon-ut.svg"></use>
               </svg>
             </a>
           </li>
@@ -66,7 +66,11 @@
           <li><a href="#">Contacts</a></li>
         </ul>
         <div class="cart">
-          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#" aria-label="YouTube">
+            <svg width="16" height="16" aria-hidden="true">
+              <use href="./images/icons.svg#icon-cart.svg"></use>
+            </svg>
+          </a>
           <span class="cart-count">0</span>
         </div>
       </nav>
@@ -121,13 +125,18 @@
       </div>
     </section>
 
-    <!-- =====   Section Article list -->
+    <!-- =====   Section Stuffed animals -->
 
-    <section class="section">
+    <section class="section stuff-section">
       <div class="container article-container">
         <div class="section-header">
           <h2 class="section-title">Stuffed Animals</h2>
-          <a href="#" class="see-all-link">See All Toys <span>&#8594;</span></a>
+          <a href="#" class="see-all-link">
+            See All Toys
+            <svg class="arrow-icon">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </a>
         </div>
         <div class="scroll-track">
           <div class="scroll-indicator" id="scrollIndicator"></div>
@@ -136,7 +145,7 @@
           <!-- Article 1 -->
           <li class="product-card">
             <img
-              src="/path/to/teddy-bear.jpg"
+              src="./images/stuf-1-1x.png"
               alt="Teddy Bear"
               class="product-image"
             />
@@ -147,7 +156,7 @@
           <!-- Article 2 -->
           <li class="product-card">
             <img
-              src="/path/to/mega-plush-toy.jpg"
+              src="./images/stuf-2-1x.png"
               alt="Mega Plush Toy"
               class="product-image"
             />
@@ -158,7 +167,7 @@
           <!-- Article 3 -->
           <li class="product-card">
             <img
-              src="/path/to/cute-dog.jpg"
+              src="./images/stuf-3-1x.png"
               alt="Cute Dog"
               class="product-image"
             />
@@ -169,7 +178,71 @@
           <!-- Article 4 -->
           <li class="product-card">
             <img
-              src="/path/to/little-friend.jpg"
+              src="./images/stuf-4-1x.png"
+              alt="Little Friend"
+              class="product-image"
+            />
+            <h3 class="product-name">Little Friend</h3>
+            <span class="product-price">$27.00 USD</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =====   Section Wooden Toys -->
+
+    <section class="section wood-section">
+      <div class="container article-container">
+        <div class="section-header">
+          <h2 class="section-title">Wooden Toys</h2>
+          <a href="#" class="see-all-link">
+            See All Toys
+            <svg class="arrow-icon">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="scroll-track">
+          <div class="scroll-indicator" id="scrollIndicatorWood"></div>
+        </div>
+        <ul class="product-grid">
+          <!-- Article 1 -->
+          <li class="product-card">
+            <img
+              src="./images/woodenToys/wood-1-1x.png"
+              alt="Teddy Bear"
+              class="product-image"
+            />
+            <h3 class="product-name">Teddy Bear</h3>
+            <span class="product-price">$30.00 USD</span>
+          </li>
+
+          <!-- Article 2 -->
+          <li class="product-card">
+            <img
+              src="./images/woodenToys/wood-2-1x.png"
+              alt="Mega Plush Toy"
+              class="product-image"
+            />
+            <h3 class="product-name">Mega Plush Toy</h3>
+            <span class="product-price">$38.00 USD</span>
+          </li>
+
+          <!-- Article 3 -->
+          <li class="product-card">
+            <img
+              src="./images/woodenToys/wood-3-1x.png"
+              alt="Cute Dog"
+              class="product-image"
+            />
+            <h3 class="product-name">Cute Dog</h3>
+            <span class="product-price">$24.00 USD</span>
+          </li>
+
+          <!-- Article 4 -->
+          <li class="product-card">
+            <img
+              src="./images/woodenToys/wood-4-1x.png"
               alt="Little Friend"
               class="product-image"
             />

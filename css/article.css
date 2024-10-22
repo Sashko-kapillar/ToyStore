@@ -1,8 +1,7 @@
 /* =====   Section article   ===== */
 
-/* Заголовок секції */
-.article-container {
-  max-width: 1200px;
+.stuff-section {
+  padding-top: 0;
 }
 
 .section-header {
@@ -24,11 +23,15 @@
   color: #333;
   display: flex;
   align-items: center;
+  border: none;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.3);
 }
 
-.see-all-link span {
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
   margin-left: 5px;
-  font-size: 18px;
 }
 
 /* Індикатор прокрутки */
@@ -65,9 +68,11 @@
 
 /* Карточка продукту */
 .product-card {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border-radius: 16px;
-  padding: 44px 32px;
+  padding: 44px 28px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
   text-align: center;
   width: 212px;
@@ -92,4 +97,8 @@
   color: white;
   font-size: 14px;
   border-radius: 20px;
+}
+
+.wood-section {
+  padding-top: 0;
 }
