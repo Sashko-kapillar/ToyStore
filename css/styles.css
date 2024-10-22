@@ -3,10 +3,10 @@
 
 /* Верхня секція з контактами */
 .top-bar {
+  font-family: var(--font-family);
   color: white;
   display: flex;
   flex-direction: column;
-
   font-size: 14px;
 }
 
@@ -14,30 +14,36 @@
   margin-right: 20px;
 }
 
+.contact-info {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
 .social {
   display: flex;
   justify-content: space-between;
   background-color: #a5c926;
+  height: 32px;
+  align-items: baseline;
 }
 
 .social ul {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 4px;
 }
 
 .social li {
   display: inline;
 }
 
-.social a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px; /* Розмір іконок */
+.social-svg {
+  fill: #fff;
 }
 
-.social-svg {
-  fill: #000;
+.cart-icon {
+  fill: currentColor;
 }
 
 /* Навігаційна панель */
