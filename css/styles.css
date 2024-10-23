@@ -149,7 +149,8 @@
   transition: background-color 0.3s;
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #76b62a; /* Трохи темніший зелений */
 }
 
@@ -158,6 +159,11 @@
 .shop-now-title {
   position: absolute;
   left: -9999px;
+}
+
+.shop-now-section {
+  display: flex;
+  justify-content: center;
 }
 
 /* .shop-container {
@@ -175,9 +181,9 @@
 /* Карточка категорії */
 .category-card {
   position: relative;
-  min-width: 570px;
+  /* min-width: 570px; */
   height: 188px;
-  border-radius: 15px;
+  border-radius: 16px;
   overflow: visible;
   display: flex;
   align-items: center;
@@ -217,16 +223,17 @@
 }
 
 .content-stuff {
-  margin-left: 50%;
+  padding: 48px 128px 48px 264px;
   text-align: left;
 }
 
 .content-wood {
-  margin-left: 25%;
+  padding: 48px 264px 48px 128px;
   text-align: right;
 }
 
 .category-title {
+  white-space: nowrap;
   font-size: 24px;
   font-weight: bold;
   color: white;
