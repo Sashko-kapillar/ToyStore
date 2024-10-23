@@ -16,8 +16,7 @@
 /* Підключення Varela Round */
 @font-face {
   font-family: "Varela Round";
-  src: url("/path/to/fonts/VarelaRound-Regular.woff2") format("woff2"),
-    url("/path/to/fonts/VarelaRound-Regular.woff") format("woff");
+  src: url("../fonts/VarelaRound-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -30,12 +29,21 @@
 :root {
   --font-family: "Open Sans", sans-serif;
   --second-family: "Varela Round", sans-serif;
+
+  /* color */
+  --black: #111;
+  --accet-green: #a5c926;
+  --white: #fff;
+  --grey: #999;
+  --hover-grey: #bbb;
+  --hover: #76b62a;
+  --bg: #f8f8f8;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: var(--bg);
 }
 
 .section {

@@ -1,5 +1,7 @@
 @import url("./reset.css");
 @import url("./article.css");
+@import url("./watch.css");
+@import url("./simple.css");
 
 /* Верхня секція з контактами */
 .top-bar {
@@ -10,8 +12,21 @@
   font-size: 14px;
 }
 
-.contact-info span {
-  margin-right: 20px;
+.contact-list {
+  font: 400 10px / 1.6 var(--font-family);
+  color: var(--white);
+  gap: 16px;
+}
+
+.contact-item {
+  padding: 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  background-color: var(--hover);
 }
 
 .contact-info {
@@ -24,27 +39,39 @@
 .social {
   display: flex;
   justify-content: space-between;
-  background-color: #a5c926;
+  background-color: var(--accet-green);
   height: 32px;
-  align-items: baseline;
+  align-items: center;
 }
 
-.social ul {
-  list-style: none;
-  display: flex;
+.social-list {
   gap: 4px;
+  height: 100%;
+  align-items: center;
 }
 
-.social li {
-  display: inline;
+.social-list a {
+  display: flex;
 }
 
 .social-svg {
-  fill: #fff;
+  fill: var(--white);
+  transition: fill 0.3s;
+}
+
+.social-svg:hover,
+.social-svg:focus {
+  fill: var(--hover);
 }
 
 .cart-icon {
   fill: currentColor;
+  transition: fill 0.3s ease-in-out;
+}
+
+.cart-icon:hover,
+.cart-icon:focus {
+  fill: var(--hover);
 }
 
 /* Навігаційна панель */
@@ -54,27 +81,35 @@
   align-items: center;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 72px;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  display: inline-block;
+  font: 400 21px / 1.52381 var(--second-family);
+  color: var(--black);
+  cursor: pointer;
+  padding: 12px 18px;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
+.nav-list {
+  font: 400 14px / 1.71429 var(--font-family);
+  color: var(--black);
   gap: 20px;
 }
 
-.nav-links li {
-  display: inline;
+/* .nav-item {
+} */
+
+.nav-link {
+  display: inline-block;
+  padding: 12px 18px;
+  transition: color 0.3s;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--hover);
 }
 
 .cart {
@@ -83,10 +118,17 @@
 }
 
 .cart a {
-  color: #333;
+  display: flex;
+  font: 400 13px / 1.85 var(--font-family);
+  color: var(--black);
   text-decoration: none;
-  font-size: 24px;
   margin-right: 5px;
+  align-items: center;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
 }
 
 .cart-count {
@@ -125,15 +167,21 @@
 }
 
 .hero-subtitle {
-  font-size: 18px;
-  color: #8dc63f; /* Зелений колір */
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.23;
+  font-family: var(--font-family);
+  text-align: center;
+  color: var(--accet-green);
   margin-bottom: 10px;
 }
 
 .hero-title {
-  font-size: 36px;
-  font-weight: bold;
-  color: #333;
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 1.23;
+  font-family: var(--second-family);
+  color: var(--black);
   margin: 0 0 20px;
   max-width: 416px;
 }
@@ -141,17 +189,21 @@
 .hero-button {
   display: inline-block;
   padding: 12px 30px;
-  background-color: #8dc63f; /* Зелений колір */
-  color: white;
-  font-size: 16px;
+  background-color: var(--accet-green);
   text-decoration: none;
   border-radius: 24px;
   transition: background-color 0.3s;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-family: var(--font-family);
+  text-align: center;
+  color: var(--white);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #76b62a; /* Трохи темніший зелений */
+  background-color: var(--hover); /* Трохи темніший зелений */
 }
 
 /* =====   section shop now   ===== */
@@ -234,24 +286,24 @@
 
 .category-title {
   white-space: nowrap;
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
+  font: 400 27px / 1.33333 var(--second-family);
+  text-align: right;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 .shop-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: white;
-  color: #333;
-  font-size: 16px;
-  font-weight: bold;
+  background-color: var(--white);
+  font: 400 13px / 1.84615 var(--font-family);
+  text-align: center;
+  color: var(--black);
   text-decoration: none;
   border-radius: 20px;
   transition: background-color 0.3s;
 }
 
 .shop-button:hover {
-  background-color: #eee;
+  background-color: var(--hover-grey);
 }

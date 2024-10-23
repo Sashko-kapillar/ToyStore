@@ -34,7 +34,14 @@
   align-items: center;
   border: none;
   border-bottom: 2px solid #ddd;
-  padding: 4px 0;
+  border-radius: 4px;
+  padding: 4px 4px;
+  transform: background-color 0.3s;
+}
+
+.see-all-link:hover,
+.see-all-link:focus {
+  background-color: var(--hover-grey);
 }
 
 .arrow-icon {
@@ -93,16 +100,17 @@
 }
 
 .product-name {
-  font-size: 18px;
-  font-weight: bold;
+  font: 400 14px / 1.43 var(--second-family);
+  text-align: center;
+  color: var(--black);
   margin: 0 0 10px;
 }
 
 .product-price {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #8dc63f;
-  color: white;
+  background-color: var(--accet-green);
+  color: var(--white);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.67;

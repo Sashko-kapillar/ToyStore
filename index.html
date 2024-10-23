@@ -18,15 +18,23 @@
     <div class="top-bar">
       <div class="social container">
         <address class="contact-info">
-          <a class="contact-link">Call Us: +1 213 974-5898</a>
-          <span
-            >Email:
-            <a href="mailto:toystore@template.com"
-              >toystore@template.com</a
-            ></span
-          >
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a class="contact-link" href="tel:213974898"
+                >Call Us: +1 213 974-5898</a
+              >
+            </li>
+            <li class="contact-item">
+              <span
+                >Email:
+                <a class="contact-link" href="mailto:toystore@template.com"
+                  >toystore@template.com</a
+                ></span
+              >
+            </li>
+          </ul>
         </address>
-        <ul>
+        <ul class="social-list">
           <li>
             <a href="#" aria-label="Twitter">
               <svg class="social-svg" width="18" height="18" aria-hidden="true">
@@ -65,21 +73,31 @@
         </ul>
       </div>
       <nav class="navbar container">
-        <div class="logo">ToyStore</div>
-        <ul class="nav-links">
-          <li><a href="#">Catalog</a></li>
-          <li><a href="#">Delivery</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contacts</a></li>
+        <a href="./index.html" class="logo">ToyStore</a>
+
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">Catalog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
         </ul>
         <div class="cart">
-          <a href="#" aria-label="cart">
-            Cart
-            <svg class="cart-icon" width="32" height="32" aria-hidden="true">
-              <use href="./images/icons.svg#icon-cart"></use>
-            </svg>
-          </a>
-          <span class="cart-count">0</span>
+          <ul class="cart-list">
+            <li class="cart-item">
+              <a href="#" class="cart-link" aria-label="cart">
+                Cart
+                <svg
+                  class="cart-icon"
+                  width="32"
+                  height="32"
+                  aria-hidden="true"
+                >
+                  <use href="./images/icons.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="cart-item"><span class="cart-count">0</span></li>
+          </ul>
         </div>
       </nav>
     </div>
@@ -259,6 +277,63 @@
             <a href="#" class="product-price">$27.00 USD</a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!-- =====   Section Watch   ===== -->
+
+    <section class="section watch-section">
+      <div class="container">
+        <!-- Маркований список для текстового блоку -->
+        <ul class="watch-list">
+          <li class="watch-subtitle">about the shop</li>
+          <li class="watch-title">watch our story</li>
+          <li class="watch-description">
+            <p class="watch-text">
+              This is not just a marketing video with perfect ad copy. It’s
+              based on a number of factors, including ad placement,
+              demographics, even the consumer’s mood.
+            </p>
+          </li>
+        </ul>
+
+        <!-- Кнопка відтворення відео -->
+        <button class="play-button" aria-label="Play Video">
+          <span class="play-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- =====   Simple   ===== -->
+
+    <section class="section simple-section">
+      <div class="container">
+        <!-- Маркований список для текстового блоку -->
+        <ul class="simple-list">
+          <li class="simple-subtitle">Made for Webflow</li>
+          <li class="simple-title">
+            Simple & Colorful Ecommerce Template for Your Business
+          </li>
+        </ul>
+        <div class="content-container">
+          <div class="simple-content">
+            <h3 class="content-title">Available for FREE!</h3>
+            <div class="content-track"></div>
+            <p class="content-description">
+              A successful marketing plan relies heavily on the pulling-power of
+              advertising copy. Writing result-oriented ad copy is difficult, as
+              it must appeal to, entice, and convince consumers to take action.
+              There is no magic formula to write perfect ad copy.
+            </p>
+            <a href="#" class="cta-button">Get it now!</a>
+          </div>
+          <div class="simple-image">
+            <img
+              src="./images/simple-1x.jpg"
+              alt="Kids in superhero costumes"
+            />
+          </div>
+        </div>
       </div>
     </section>
   </body>

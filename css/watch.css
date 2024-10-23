@@ -1,0 +1,74 @@
+/* Секція Watch */
+.watch-section {
+  background-image: url("../images/watch-video-1x.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+/* Текстовий блок */
+.watch-list {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.watch-subtitle {
+  font: 400 13px / 1.23 var(--font-family);
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+
+.watch-title {
+  font: 400 36px / 1.22 var(--second-family);
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 18px;
+  text-transform: capitalize;
+}
+
+.watch-text {
+  font: 400 14px / 1.71 var(--font-family);
+  text-align: center;
+  color: var(--white);
+  max-width: 718px;
+  margin-bottom: 26px;
+}
+
+/* Кнопка Play */
+.play-button {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  background-color: var(--accet-green);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+}
+
+.play-button:hover,
+.play-button:focus {
+  background-color: var(--hover);
+}
+
+/* Іконка Play */
+.play-icon {
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 2px; /* Центрування іконки */
+}
