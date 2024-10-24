@@ -68,11 +68,6 @@
   transition: fill 0.3s ease-in-out;
 }
 
-.cart-icon:hover,
-.cart-icon:focus {
-  fill: var(--hover);
-}
-
 /* Навігаційна панель */
 .nav-container {
   background-color: var(--white);
@@ -124,13 +119,19 @@
   align-items: center;
 }
 
-.cart a {
+.cart-link {
   display: flex;
   font: 400 13px / 1.85 var(--font-family);
   color: var(--black);
   text-decoration: none;
   margin-right: 5px;
   align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.cart-link:hover,
+.cart-link:focus {
+  color: var(--hover);
 }
 
 .cart-item {
@@ -313,6 +314,7 @@
   transition: background-color 0.3s;
 }
 
-.shop-button:hover {
+.shop-button:hover,
+.shop-button:focus {
   background-color: var(--hover-grey);
 }

@@ -71,7 +71,8 @@
   text-transform: uppercase;
 }
 
-.cta-button:hover {
+.cta-button:hover,
+.cta-button:focus {
   background-color: var(--hover);
 }
 
