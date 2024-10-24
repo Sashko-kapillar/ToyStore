@@ -29,7 +29,7 @@
 }
 
 .footer-menu a {
-  font: 400 14px / 1.71429 var(--font-family);
+  font: 400 14px / 1.71 var(--font-family);
   color: var(--white);
   margin-right: 28px;
   cursor: pointer;
