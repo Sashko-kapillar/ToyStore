@@ -1,0 +1,86 @@
+/* Секція підписки */
+.subscribe-section {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Контейнер блоку підписки */
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  padding: 48px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+}
+
+/* Іконка */
+.subscribe-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accet-green);
+}
+
+.sub-svg {
+  fill: black;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Текстове поле */
+.subscribe-text {
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--black);
+}
+
+.highlight {
+  color: var(--accet-green);
+  font-weight: bold;
+}
+
+/* Поле вводу */
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-input {
+  padding: 10px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  width: 200px;
+  transition: border-color 0.3s;
+}
+
+.subscribe-input:focus {
+  border-color: var(--accet-green);
+}
+
+/* Кнопка */
+.subscribe-button {
+  width: 40px;
+  height: 40px;
+  background-color: var(--accet-green);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+
+.subscribe-button:hover {
+  background-color: var(--hover);
+}
