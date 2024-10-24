@@ -1,0 +1,91 @@
+/* Секція футера */
+.footer-section {
+  background-color: var(--accet-green);
+  color: var(--white);
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Верхня частина футера */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  padding: 48px 0;
+}
+
+.footer-logo {
+  font: 400 21px / 1.52 var(--second-family);
+  color: var(--white);
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--hover);
+}
+
+.footer-menu a {
+  font: 400 14px / 1.71429 var(--font-family);
+  color: var(--white);
+  margin-right: 28px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus {
+  color: var(--hover);
+}
+
+/* Соціальні іконки */
+.footer-social a {
+  font-size: 20px;
+  color: var(--white);
+  margin: 0 5px;
+}
+
+.footer-social a:hover {
+  color: var(--hover);
+}
+
+/* Лінія розділення */
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 20px 0;
+}
+
+/* Нижня частина футера */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-bottom a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--font-family);
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Маркований список */
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-item {
+  display: inline-block;
+}
